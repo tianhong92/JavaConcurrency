@@ -9,7 +9,7 @@ import java.util.concurrent.Executors;
 public class SynchronizedExample {
     //修饰代码块
     public void test1(){
-        synchronized (SynchronizedExample.class){
+        synchronized (this.getClass()){
             for(int i = 0; i < 10; i++){
                 log.info("test1-{}", i);
             }
